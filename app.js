@@ -1,11 +1,16 @@
 document.querySelectorAll('.emotion').forEach(img => {
     img.addEventListener('click', async () => {
         const emotion = img.getAttribute('data-emotion');
+        document.querySelector('#emotion-selected').textContent = emotion;
         try {
 
-            // TODO: COMPLETAR: Necesitamos hacer un fetch al endpoint correcto, procesar los datos y asignar el libro recuperado a la variable 'book'
 
-            const book = {}; // TODO: Aquí deberíamos tener un objeto con información del libro de la REST API
+            // TODO: COMPLETAR: Necesitamos hacer un fetch al endpoint correcto, procesar los datos y asignar el libro recuperado a la variable 'book'
+            const response = await fetch(`https://emotional-shelf.onrender.com/api/books/recommendations/${emotion}/random`);
+
+            const data = await response.json();
+
+            const book = data.results[0]; // TODO: Aquí deberíamos tener un objeto con información del libro de la REST API
 
             // NO MODIFICAR A PARTIR DE AQUÍ
             document.querySelector('#book-title').textContent = book.title;
