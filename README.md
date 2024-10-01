@@ -16,11 +16,17 @@ Los programadores que han contratado han hecho la aplicación en HTML, CSS y Jav
 
 La API está todavía en una fase temprada de desarrollo. Ha sido publicada en el siguiente endpoint:
 
-`GET http://https://emotional-shelf.onrender.com/api/recommendations/:emotion/random`
+`GET http://https://emotional-shelf.onrender.com/api/books/recommendations/:emotion/random`
 
 Donde :emotion es un valor de emoción posible entre los que maneja la REST API: 
 
-Prueba a colocar 
+Prueba a colocar cualquiera de las emociones que maneja la api
+
+`Inspiration, Curiosity, Escapism, Nostalgia, Happiness, Sadness]`
+
+Asi pues si queremos un libro relacionado con la curiosidad haríamos un GET a https://emotional-shelf.onrender.com/api/books/recommendations/Curiosity/random
+
+
 
 ## Iteración 1
 
