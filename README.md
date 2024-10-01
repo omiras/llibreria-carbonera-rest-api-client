@@ -46,3 +46,7 @@ Es posible que tengas que modificar el HTML.
 ## Iteración 3
 
 Levanta tu aplicación de _Emotional Shelf_ en localhost, y conecta ahora está aplicación a tu API. Intenta reproducir el mismo comportamiento que usando la API pública. Surgirán problemas es normal. Trata de identificarlos y arreglarlos.
+
+### Creditos de las imágenes
+
+[Shiba Inu Dog Emoticons](<a href="https://www.flaticon.com/free-icons/shiba-inu" title="shiba inu icons">Shiba inu icons created by AomAm - Flaticon</a>)
