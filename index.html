@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Book Finder</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <style>
+        .emotion {
+            cursor: pointer;
+            width: 150px;
+            margin: 10px;
+        }
+
+        #book-container {
+            display: none;
+        }
+
+        .book-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Find a Book Based on Your Emotion</h1>
+        <div class="grid">
+            <img src="images/cool.png" alt="Inspiration" class="emotion" data-emotion="Inspiration">
+            <img src="images/open-mouth.png" alt="Curiosity" class="emotion" data-emotion="Curiosity">
+            <img src="images/dizzy.png" alt="Escapism" class="emotion" data-emotion="Escapism">
+            <img src="images/relax.png" alt="Nostalgia" class="emotion" data-emotion="Nostalgia">
+            <img src="images/happy.png" alt="Hapiness" class="emotion" data-emotion="Hapiness">
+            <img src="images/cry.png" alt="Sadness" class="emotion" data-emotion="Sadness">
+        </div>
+
+        <div id="book-container" class="container">
+            <h2>Recommended Book</h2>
+            <div class="book-info">
+                <div>
+                    <p><strong>Title:</strong> <span id="book-title"></span></p>
+                    <p><strong>ISBN:</strong> <span id="book-isbn"></span></p>
+                    <p><strong>Price:</strong> $<span id="book-price"></span></p>
+                    <p><strong>Description:</strong> <span id="book-description"></span></p>
+                </div>
+                <div>
+                    <img style="width:300px" id="book-image" src="" alt="">
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
