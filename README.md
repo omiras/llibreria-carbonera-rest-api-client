@@ -8,6 +8,8 @@ Para ello cada librería implementará una aplicación a su manera para consumir
 
 Los programadores que han contratado han hecho la aplicación en HTML, CSS y JavaScript del lado cliente, pero la aplicación está incompleta.
 
+[Demo de la solución](https://omiras.github.io/llibreria-carbonera-rest-api-client/)
+
 ## Modo _Hardcore_
 
 ¿Te atreves a implementar la aplicación del lado cliente de 0? No mires el fichero *app.js*. Renombralo y crearlo de cero para gestionarla manipulación del DOM , eventos JavaScript y llamada a la fetch API
@@ -16,7 +18,7 @@ Los programadores que han contratado han hecho la aplicación en HTML, CSS y Jav
 
 La API está todavía en una fase temprada de desarrollo. Ha sido publicada en el siguiente endpoint:
 
-`GET http://https://emotional-shelf.onrender.com/api/books/recommendations/:emotion/random`
+`GET https://emotional-shelf.onrender.com/api/books/recommendations/:emotion/random`
 
 Donde :emotion es un valor de emoción posible entre los que maneja la REST API: 
 
@@ -38,6 +40,8 @@ Completa el fichero app.js allí donde se te indica. Estamos haciendo una petici
 Es posible que una de las emociones no "funcione". ¿Cuál es? ¿Por qué?
 Echa un vistazo en las herramientas de desarrollador para averiguarlo:
 <img src="https://oscarm.tinytake.com/media/16badfc?filename=1727774824942_TinyTake01-10-2024-11-26-28_638633716245038337.png&sub_type=thumbnail_preview&type=attachment&width=1199&height=612" title="Powered by TinyTake Screen Capture"/>
+
+Es posible que tengas que modificar el HTML.
 
 ## Iteración 3
 

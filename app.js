@@ -1,6 +1,8 @@
 document.querySelectorAll('.emotion').forEach(img => {
     img.addEventListener('click', async () => {
         const emotion = img.getAttribute('data-emotion');
+        document.querySelector('#emotion-selected').textContent = emotion;
+
         try {
 
             // TODO: COMPLETAR: Necesitamos hacer un fetch al endpoint correcto, procesar los datos y asignar el libro recuperado a la variable 'book'
